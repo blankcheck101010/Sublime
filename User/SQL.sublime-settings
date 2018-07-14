@@ -1,0 +1,8 @@
+// These settings override both User and Default settings for the SQL syntax
+{
+    "translate_tabs_to_spaces": true,
+    "auto_indent": true,
+    "tab_size": 4,
+    "trim_trailing_white_space_on_save": true,
+    "tab_completion": false
+}

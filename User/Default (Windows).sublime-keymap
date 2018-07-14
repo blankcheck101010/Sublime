@@ -1,0 +1,12 @@
+[
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace"},
+    { "keys": ["ctrl+t"], "command": "new_file" },
+    { "keys": ["ctrl+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["ctrl+alt+left"], "command": "single_selection" },
+    { "keys": ["ctrl+alt+right"], "command": "single_selection" },
+    { "keys": ["ctrl+shift+v"], "command": "paste" },
+    { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+    { "keys": ["alt+s"], "command": "dev_sync" },
+    { "keys": ["alt+shift+]"], "command": "next_view" },
+    { "keys": ["alt+shift+["], "command": "prev_view" }
+]

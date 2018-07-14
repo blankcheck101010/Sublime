@@ -1,0 +1,25 @@
+######
+# Type in the directory, and/or filetype to ignore
+*.pyc
+*.DS_Store
+*.sublime-workspace
+*.sublime-build
+
+# Ignoring these sublime text files
+/User/Preferences.sublime-settings 
+/User/Package Control.last-run
+/User/Package Control.ca-list
+/User/Package Control.merged-ca-bundle
+/User/Package Control.user-ca-bundle
+/User/Package Control.ca-bundle
+/User/Package Control.system-ca-bundle
+/User/Package Control.cache/
+/User/Package Control.ca-certs/
+/User/oscrypto-ca-bundle.crt
+/User/SQLTools.sublime-settings
+/User/SQLToolsConnections.sublime-settings
+/User/SQLToolsSavedQueries.sublime-settings
+/User/GitSavvy/GitSavvy.active-diff-view.py.hidden-tmTheme
+/User/GitSavvy/GitSavvy.active-diff-view.yml.hidden-tmTheme
+/User/GitSavvy/GitSavvy.active-diff-view.sublime-settings.hidden-tmTheme
+/User/GitSavvy/GitSavvy.active-diff-view.sublime-settings.hidden-color-scheme

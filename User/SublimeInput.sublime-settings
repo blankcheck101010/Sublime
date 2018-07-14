@@ -1,0 +1,9 @@
+{
+  "build_schemas" : {
+    "cpp" : {
+      "shell_cmd" : "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+      "input_start" : "/*input",
+      "input_end" : "*/"
+    }
+  }
+}

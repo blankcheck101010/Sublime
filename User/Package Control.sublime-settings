@@ -1,0 +1,43 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Anaconda",
+		"BracketHighlighter",
+		"C++ Snippets",
+		"C++11",
+		"Dayle Rees Color Schemes",
+		"Emmet",
+		"GitGutter",
+		"GitSavvy",
+		"HTML-CSS-JS Prettify",
+		"JSLint",
+		"Material Theme",
+		"Package Control",
+		"PackageResourceViewer",
+		"Pretty JSON",
+		"Project Sync",
+		"Python Breakpoints",
+		"SFTP",
+		"SideBarEnhancements",
+		"SqlBeautifier",
+		"SQLTools",
+		"Sublime Input",
+		"sublime-text-2-buildview",
+		"SublimeLinter",
+		"SublimeLinter-cpplint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SyntaxFold",
+		"TerminalView",
+		"Theme - Flatland",
+		"WordHighlight"
+	]
+}
