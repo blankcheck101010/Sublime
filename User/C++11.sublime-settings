@@ -1,4 +1,13 @@
-// These settings override both User and Default settings for the C++11 syntax
 {
-
+	"extensions":
+	[
+		"cc",
+		"cxx",
+		"c++",
+		"hpp",
+		"hxx",
+		"h++",
+		"inl",
+		"ipp"
+	]
 }
