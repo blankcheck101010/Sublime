@@ -108,7 +108,7 @@
         },
         {
             "name": "PreProcessor Entity name",
-            "scope": "entity.name.function.preprocessor",
+            "scope": "entity.name.function.preprocessor.c",
             "foreground": "var(yellow)"
         },
         {
