@@ -78,7 +78,7 @@
         {
             "name": "Keyword",
             "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word",
-            "foreground": "var(yellow)"
+            "foreground": "var(red2)"
         },
         {
             "name": "Annotation Punctuation",
@@ -298,6 +298,17 @@
             "foreground": "var(red2)"
         },
         {
+            "name": "NameSpace",
+            "scope": "keyword.control.c++",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "ifndef for .h files",
+            "scope": "keyword.control.import.c | keyword.control.import.define.c | keyword.control.import.include.c | keyword.control.import.pragma.c | keyword.control.import.if.c | keyword.control.import.endif.c",
+            "foreground": "var(yellow)"
+        },
+
+        {
             "scope": "keyword.operator.cpp",
             "foreground": "var(red2)"
         },
@@ -325,19 +336,6 @@
         {
             "scope": "keyword.operator.cast.c++",
             "foreground": "var(red2)"
-        },
-        {
-            "scope": "keyword.control",
-            "foreground": "var(yellow)"
-        },
-        {
-            "scope": "keyword.control.import",
-            "foreground": "var(yellow)"
-        },
-        {
-            "name": "NameSpace",
-            "scope": "keyword.control.c++",
-            "foreground": "var(yellow2)"
         },
 
 
