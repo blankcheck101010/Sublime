@@ -101,7 +101,6 @@
             "foreground": "var(blue)",
             "font_style": "italic"
         },
-
         {
             "name": "Entity name",
             "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
@@ -290,7 +289,7 @@
             "foreground": "var(red)"
         },
         {
-            "scope": "meta.preprocessor",
+            "scope": "meta.preprocessor.macro.c | meta.preprocessor.c",
             "foreground": "var(yellow)"
         },
         {
@@ -300,14 +299,17 @@
         {
             "name": "NameSpace",
             "scope": "keyword.control.c++",
-            "foreground": "var(yellow2)"
+            "foreground": "var(orange)"
         },
         {
             "name": "ifndef for .h files",
-            "scope": "keyword.control.import.c | keyword.control.import.define.c | keyword.control.import.include.c | keyword.control.import.pragma.c | keyword.control.import.if.c | keyword.control.import.endif.c",
+            "scope": "keyword.control.import.define.c | keyword.control.import.error.c | keyword.control.import.include.c | keyword.control.import.c",
             "foreground": "var(yellow)"
         },
-
+        {
+            "scope": "keyword.control.import.pragma.c | keyword.control.import.if.c | keyword.control.import.endif.c | keyword.control.import.else.c",
+            "foreground": "var(yellow)"
+        },
         {
             "scope": "keyword.operator.cpp",
             "foreground": "var(red2)"
