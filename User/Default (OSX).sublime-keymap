@@ -8,5 +8,27 @@
     { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
     { "keys": ["alt+s"], "command": "dev_sync" },
     { "keys": ["ctrl+d"], "command": "right_delete" },
-    { "keys": ["super+e", "super+e"], "command": "st_execute" }
+    { "keys": ["ctrl+e", "ctrl+e"], "command": "st_execute" },
+    { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
+    { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
+
+
+    { "keys": ["escape"], "command": "single_selection", "context":
+        [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
+    { "keys": ["escape"], "command": "clear_fields", "context":
+        [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
+    { "keys": ["escape"], "command": "clear_fields", "context":
+        [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
+    { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true}, "context": 
+        [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["escape"], "command": "hide_overlay", "context":
+        [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["escape"], "command": "hide_popup", "context":
+        [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["escape"], "command": "hide_auto_complete", "context":
+        [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]
+    },
 ]
+
+
+
