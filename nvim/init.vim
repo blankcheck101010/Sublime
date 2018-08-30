@@ -5,7 +5,10 @@ set nocompatible
 
 " Delete spaces before line with ctrl-e
 nnoremap <silent><C-i> :s/\s\+$//<CR>
-"
+
+" Split line at current cursor with Shift+k
+:nnoremap K i<CR><Esc>
+
 
 " Alt-j/k deletes blank line below/above, and Ctrl-j/k inserts.
 nnoremap <silent><A-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
