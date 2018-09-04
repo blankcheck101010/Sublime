@@ -8,8 +8,33 @@
     { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
     { "keys": ["alt+s"], "command": "dev_sync" },
     { "keys": ["ctrl+d"], "command": "right_delete" },
-    { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
+    // { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
     { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
+
+    // { "keys": ["super+i"], "command" : "one_selection", "context" : "text"},
+
+    // {
+    //     "keys" : ["super+i"],"command" : "run_multiple_commands","args" : {
+    //         "commands" : [
+    //             { "command" : "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}, "context" : "app"},
+    //             { "command" : "one_selection", "context" : "text"},
+    //         ]
+    //     }
+    // },
+
+    {
+        "keys" : ["super+e"],"command" : "run_multiple_commands","args" : {
+            "commands" : [
+                { "command" : "one_selection", "context" : "text"},
+                { "command" : "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}, "context" : "app"},
+                { "command" : "one_selection", "context" : "text"},
+            ]
+        }
+    },
+
+    
+
+
 
 
     { "keys": ["escape"], "command": "single_selection", "context":
@@ -28,6 +53,7 @@
         [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]
     },
 ]
+
 
 
 
