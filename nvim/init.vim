@@ -1,3 +1,10 @@
+call plug#begin('~/.config/nvim/bundle')
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'jiangmiao/auto-pairs'
+Plug 'altercation/vim-colors-solarized'
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+call plug#end()
+
 " vim configuration file
 
 " This creates your prefix key. Call using <leader>
@@ -51,3 +58,6 @@ nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
 " Type a space while in Normal Mode
 nnoremap <Space> i<Space><Right><ESC>
+
+" right delete in input mode
+inoremap <C-d> <Del>
