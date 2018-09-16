@@ -9,6 +9,20 @@
     { "keys": ["alt+s"], "command": "dev_sync" },
     // { "keys": ["ctrl+d"], "command": "right_delete" },
 
+    { "keys": ["ctrl+k", "ctrl+e"], "command": "st_execute" },
+    { "keys": ["ctrl+k", "ctrl+a"], "command": "st_execute_all" },
+    { "keys": ["ctrl+k", "ctrl+x"], "command": "st_explain_plan" },
+    { "keys": ["ctrl+k", "ctrl+h"], "command": "st_history" },
+    { "keys": ["ctrl+k", "ctrl+s"], "command": "st_show_records" },
+    { "keys": ["ctrl+k", "ctrl+d"], "command": "st_desc_table" },
+    { "keys": ["ctrl+k", "ctrl+f"], "command": "st_desc_function" },
+    { "keys": ["ctrl+k", "ctrl+b"], "command": "st_format" },
+    { "keys": ["ctrl+k", "ctrl+q"], "command": "st_save_query" },
+    { "keys": ["ctrl+k", "ctrl+r"], "command": "st_remove_saved_query" },
+    { "keys": ["ctrl+k", "ctrl+l"], "command": "st_list_queries", "args": {"mode" : "run"}},
+    { "keys": ["ctrl+k", "ctrl+o"], "command": "st_list_queries", "args": {"mode" : "open"}},
+    { "keys": ["ctrl+k", "ctrl+i"], "command": "st_list_queries", "args": {"mode" : "insert"}},
+
     { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }},
     { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }},
     { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }},
@@ -25,10 +39,6 @@
             ]
         }
     },
-
-    
-
-
 
 
     { "keys": ["escape"], "command": "single_selection", "context":

@@ -3,6 +3,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'altercation/vim-colors-solarized'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " vim configuration file
