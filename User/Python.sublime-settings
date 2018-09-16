@@ -79,6 +79,7 @@
     /* Generic Settings */
     "translate_tabs_to_spaces": true,  /**/
     "tab_size": 4,
+	"detect_indentation": false,
     "auto_indent": true,
     "tab_completion": false
 }

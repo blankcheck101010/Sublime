@@ -5,6 +5,7 @@
 *.sublime-project
 *.sublime-workspace
 *.sublime-build
+Sublimerge*
 
 # Ignoring these sublime text files
 /User/Preferences.sublime-settings 
