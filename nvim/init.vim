@@ -1,12 +1,15 @@
 call plug#begin('~/.config/nvim/bundle')
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'jiangmiao/auto-pairs'
+Plug 'Raimondi/delimitMate'
 Plug 'altercation/vim-colors-solarized'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
-" vim configuration file
+" vim configuration file location
+" cd ~/.config/nvim/init.vim
+
 
 " This creates your prefix key. Call using <leader>
 :let mapleader = "C-e"
