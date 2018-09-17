@@ -65,3 +65,6 @@ nnoremap <Space> i<Space><Right><ESC>
 
 " right delete in input mode
 inoremap <C-d> <Del>
+
+" remap how to enter normal mode while in terminal mode
+tnoremap <Esc> <C-\><C-n>
