@@ -1,15 +1,21 @@
 call plug#begin('~/.config/nvim/bundle')
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Raimondi/delimitMate'
 Plug 'altercation/vim-colors-solarized'
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-line'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+
 call plug#end()
 
 " vim configuration file location
 " cd ~/.config/nvim/init.vim
 
+" inclusive - the last character of the selection is included in an operation
+set sel=inclusive
 
 " This creates your prefix key. Call using <leader>
 :let mapleader = "C-e"
