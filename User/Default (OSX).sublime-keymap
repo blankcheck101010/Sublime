@@ -23,10 +23,8 @@
     { "keys": ["ctrl+k", "ctrl+o"], "command": "st_list_queries", "args": {"mode" : "open"}},
     { "keys": ["ctrl+k", "ctrl+i"], "command": "st_list_queries", "args": {"mode" : "insert"}},
 
-    { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }},
-    { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }},
-    { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }},
-    { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" }},
+    { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "-1" }},
+    { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "+1" }},
 
     { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
     // { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
