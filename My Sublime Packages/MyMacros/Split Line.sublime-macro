@@ -1,0 +1,13 @@
+[
+// testing     ground
+
+    {"command": "first_non_space"},
+    {"command": "move_to", "args": {"to": "hardeol", "extend": true}},
+    {"command": "add_to_kill_ring", "args": {"forward": true}},
+    {"command": "cut"},
+    {"command": "insert", "args": {"characters": "\n"}},
+    {"command": "paste_and_indent"},
+    {"command": "move_to", "args": {"to": "bol", "extend": true}},
+    {"command": "one_selection"},
+    {"command": "reindent"},
+]

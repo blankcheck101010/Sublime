@@ -1,0 +1,84 @@
+let mapleader=,
+" Scroll viewport faster.
+" http://items.sjbach.com/319/configuring-vim-right
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+"
+" Type :h vintageousrc for help.
+"
+" Todo list
+"
+"
+"
+" Ctrl-n/j inserts blank line below/above
+"nnoremap <silent><C-n> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-j> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+"
+" Delete spaces before cursor with ctrl-h
+"nnoremap <silent><C-h> :s/\s\+$//<CR> :<Esc>$
+"
+" Ctrl-m/k deletes blank line below/above (if exists)
+"nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+"
+" Map ctrl+shift+j and k to grab lines and move them up and down
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+" Get surround vim installed (there's a package already)
+"
+" Automatically switch to insert mode when read-only file is selected
+" Might make sense to make it project specific (Github)
+"
+" Find out how to make sublime automically comment when o is pressed
+" if you're already in a comment
+"
+" update (remove) your cmd shift i and cmd shift e plugins 
+"
+" smart indent (i.e. on multiples of 4)
+"
+" '' - to quickly return to previous location (Check on github issues. Works sometimes)
+"
+" to copy and replace text somewhere else using change hotkeys like ci)
+" (Use the 'Using a text object' method in the website below)
+" http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+" DONE in sublime text 3!!!!
+"
+" <j-j> to type <Esc> key
+"
+" Ctrl-D - right delete in Insert Mode
+"
+" Type <Space>(s) while in normal mode
+"
+" unmap the '< key, so you can use '< again
+"
+" ctrl-u - delete back to start of line while in insert mode
+"
+" Split line at current cursor with option+k
+":nnoremap K i<CR><Esc>
+"
+" join lines with option+j
+"
+"
+"
+"
+"

@@ -26,6 +26,61 @@
     { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "-1" }},
     { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "+1" }},
 
+    // ****************** vim specific commands ******************
+    // vintageous
+
+    // enter normal mode using ctrl-[
+    { "keys": ["ctrl+["], "command": "_enter_normal_mode"
+        , "context": [{"key": "vi_insert_mode_aware"}]},
+    // right delete while in insert mode
+    { "keys": ["ctrl+d"], "command": "right_delete"
+        , "context": [{"key": "vi_insert_mode_aware"}]},
+    // spacebar while in normal mode
+    { "keys": [","," "], "command": "insert", "args": {"characters": " "},
+        "context": [{"key": "vi_command_mode_aware"}]},
+    // exit visual/multi-select mode with single selection at top
+    {"keys": ["<","<"], "command" : "UnMapUnindent"
+        , "context": [{"key": "vi_command_mode_aware"}]},  // this unmaps unindent behavior of <<
+    {"keys": ["'","<"], "command" : "one_selection"},
+    // in insert mode, deletes everything from bol to cursor
+    { "keys": ["ctrl+u"], "command": "del_to_cursor"
+        , "context": [{"key": "vi_insert_mode_aware"}]},
+
+    // Note these aren't vim specific, but still super helpful
+    // join lines
+    { "keys": ["option+j"], "command": "join_lines"},
+    // split lines at the cursor
+    { "keys": ["option+k"], "command": "run_macro_file",
+        "args": {"file": "Packages/MyMacros/Split Line.sublime-macro",}},
+    // press <esc> key using ctrl+c
+    { "keys": ["ctrl+c"], "command": "single_selection", "context":
+        [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},        
+
+ 
+
+
+
+
+
+
+    // force remap escape keys
+    { "keys": ["ctrl+c"], "command": "single_selection", "context":
+        [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields", "context":
+        [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields", "context":
+        [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_panel", "args": {"cancel": true}, "context": 
+        [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_overlay", "context":
+        [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_popup", "context":
+        [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_auto_complete", "context":
+        [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]
+    },
+
+    // actualvim
     { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
     // { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
     {
@@ -36,23 +91,6 @@
                 { "command" : "one_selection", "context" : "text"},
             ]
         }
-    },
-
-
-    { "keys": ["escape"], "command": "single_selection", "context":
-        [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
-    { "keys": ["escape"], "command": "clear_fields", "context":
-        [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "clear_fields", "context":
-        [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true}, "context": 
-        [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_overlay", "context":
-        [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_popup", "context":
-        [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_auto_complete", "context":
-        [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]
     },
 ]
 

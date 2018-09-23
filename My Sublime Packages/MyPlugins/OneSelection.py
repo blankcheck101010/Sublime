@@ -25,8 +25,8 @@ class OneSelectionCommand(sublime_plugin.TextCommand):
                 self.view.sel().clear()
                 self.view.sel().add(point)
 
-                region = sublime.Region(point, point + 1)
+                # region = sublime.Region(point, point + 1)
                 # sublime.message_dialog(str(region))
 
-                self.view.insert(edit, point, ' ')
-                self.view.erase(edit, region)
+                # self.view.insert(edit, point, ' ')
+                # self.view.erase(edit, region)
