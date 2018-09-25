@@ -19,7 +19,7 @@ nnoremap <C-y> 3<C-y>
 "nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
 "nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 "
-" Delete spaces before cursor with ctrl-h
+" Delete spaces before cursor with ctrl-h (and from end of line)
 " (think about a better binding. you use this to backspace)
 "nnoremap <silent><C-h> :s/\s\+$//<CR> :<Esc>$
 "
@@ -51,6 +51,7 @@ nnoremap <C-y> 3<C-y>
 " to copy and replace text somewhere else using change hotkeys like ci)
 " (Use the 'Using a text object' method in the website below)
 " http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text
+" https://unix.stackexchange.com/questions/88714/vim-how-can-i-do-a-change-word-using-the-current-paste-buffer
 "
 " add (proper case capitalization) highlighting (super+k, super+f)
 "

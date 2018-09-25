@@ -17,13 +17,19 @@
         { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }, "context": [{"key": "vi_command_mode_aware"}]},
 
     // focus groups
+        // creating panes with active file
+        { "keys": ["super+k", "super+shift+h"], "command": "create_pane_with_file", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+l"], "command": "create_pane_with_file", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+k"], "command": "create_pane_with_file", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+j"], "command": "create_pane_with_file", "args": {"direction": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
+
         // traveling to panes
         { "keys": ["super+k", "h"], "command": "travel_to_pane", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
         { "keys": ["super+k", "l"], "command": "travel_to_pane", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
         { "keys": ["super+k", "k"], "command": "travel_to_pane", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
         { "keys": ["super+k", "j"], "command": "travel_to_pane", "args": {"direction": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
 
-        // create pane with active file
+        // moving active file to an already created pane
         { "keys": ["super+k", "super+h"], "command": "carry_file_to_pane", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
         { "keys": ["super+k", "super+l"], "command": "carry_file_to_pane", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
         { "keys": ["super+k", "super+k"], "command": "carry_file_to_pane", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
@@ -34,6 +40,7 @@
 
         // zoom
         { "keys": ["super+k", "super+z"], "command": "zoom_pane", "args": {"fraction": 1.0} },
+        { "keys": ["super+k", "super+shift+z"], "command": "unzoom_pane", "args": {} },
 
 
 

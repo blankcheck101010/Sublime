@@ -8,7 +8,7 @@
 Sublimerge*
 
 # Ignoring these sublime text files
-/User/Preferences.sublime-settings 
+# /User/Preferences.sublime-settings 
 /User/Package Control.last-run
 /User/Package Control.ca-list
 /User/Package Control.merged-ca-bundle
