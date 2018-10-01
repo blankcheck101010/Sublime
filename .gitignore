@@ -19,12 +19,6 @@
 /User/Package Control.cache/
 /User/Package Control.ca-certs/
 /User/oscrypto-ca-bundle.crt
-/User/SQLTools.sublime-settings
-/User/SQLToolsConnections.sublime-settings
-/User/SQLToolsSavedQueries.sublime-settings
-/User/SFTP.sublime-settings
-/User/sftp_servers/
-/User/GitSavvy/GitSavvy.active-diff-view.py.hidden-tmTheme
-/User/GitSavvy/GitSavvy.active-diff-view.yml.hidden-tmTheme
-/User/GitSavvy/GitSavvy.active-diff-view.sublime-settings.hidden-tmTheme
-/User/GitSavvy/GitSavvy.active-diff-view.sublime-settings.hidden-color-scheme
+/User/SQLTools*
+/User/SFTP*
+/User/GitSavvy/GitSavvy*
