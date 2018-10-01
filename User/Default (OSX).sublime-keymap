@@ -71,9 +71,9 @@
         // // this unmaps unindent behavior of >>
         // {"keys": [">",">"], "command" : "UnMapIndent"
         //     , "context": [{"key": "vi_command_mode_aware"}]},
-
-
-
+    // delete spaces, first right, than left
+    { "keys": ["ctrl+h"], "command": "line_movement", "args": {"move": "spaces"}
+        , "context": [{"key": "vi_command_mode_aware"}]},
 
     // ************* not vim specific - flows well with vim *************
     // move line down
@@ -81,7 +81,6 @@
     // move line up
     { "keys": ["ctrl+k"], "command": "line_movement", "args": {"move": "up"}},
     
-    // STILL WORKING ON
     // create new line below
     { "keys": ["ctrl+n"], "command": "line_movement", "args": {"move": "create"}},
     // delete new line below

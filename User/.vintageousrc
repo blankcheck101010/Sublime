@@ -11,22 +11,6 @@ nnoremap <C-y> 3<C-y>
 "
 "
 "
-" Ctrl-n/j inserts blank line below/above
-"nnoremap <silent><C-n> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-"nnoremap <silent><C-j> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-"
-" Ctrl-m/k deletes blank line below/above (if exists)
-"nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
-"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
-"
-" Delete spaces before cursor with ctrl-h (and from end of line)
-" (think about a better binding. you use this to backspace)
-"nnoremap <silent><C-h> :s/\s\+$//<CR> :<Esc>$
-"
-"
-"
-"
-"
 "
 "
 "
@@ -81,7 +65,16 @@ nnoremap <C-y> 3<C-y>
 "
 " join lines with option+j
 "
+" Ctrl-n/j inserts blank line below/above
+"nnoremap <silent><C-n> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-j> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 "
+" Ctrl-m/k deletes blank line below/above (if exists)
+"nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+"
+" Delete spaces before cursor with ctrl-h (and from end of line)
+"nnoremap <silent><C-h> :s/\s\+$//<CR> :<Esc>$
 "
 "
 "
