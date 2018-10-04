@@ -2,4 +2,4 @@
 * text=auto
 
 # run filter named gitignore on all files ending in  
-*.sublime-settings filter=gitignore
+User/Preferences.sublime-settings filter=gitignore
