@@ -11,10 +11,10 @@
         { "keys": ["super+k", "super+p"], "command": "paste_from_history" },    
 
     // window-tab movement
-        { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }, "context": [{"key": "vi_command_mode_aware"}]},
-        { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" }, "context": [{"key": "vi_command_mode_aware"}]},
-        { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }, "context": [{"key": "vi_command_mode_aware"}]},
-        { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }},
+        { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" }},
+        { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }},
+        { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }},
 
     // focus groups
         // creating panes with active file
@@ -43,10 +43,9 @@
         { "keys": ["super+k", "super+shift+z"], "command": "unzoom_pane", "args": {} },
 
 
-
-
-
-    // ****************** vintageous specific commands ******************
+// ****************** vintageous specific commands ******************
+    // toggle neovintagous
+    { "keys": ["super+i"], "command": "toggle_neovintageous" },
     // *************************** Insert Mode **************************
     // enter normal mode using ctrl-[
     { "keys": ["ctrl+["], "command": "_enter_normal_mode"
@@ -63,23 +62,35 @@
     { "keys": [">"," "], "command": "insert", "args": {"characters": " "}
         , "context": [{"key": "vi_command_mode_aware"}]},
     // exit visual/multi-select mode with single selection at top
-    {"keys": ["<"], "command" : "one_selection"
-        , "context": [{"key": "vi_command_mode_aware"}]},
+    {"keys" : ["<"],"command" : "run_multiple_commands","args" : {
+            "commands" : [
+                { "command": "one_selection"},
+                { "command": "_enter_normal_mode"}
+            ]
+        }, "context": [{"key": "vi_command_mode_aware"}]
+    },
+
+    {"keys" : ["option+1"], "command" : "test",
+        "context": [{"key": "vi_command_mode_aware"}]},
         // // this unmaps unindent behavior of <<
         // {"keys": ["<","<"], "command" : "UnMapUnindent"
         //     , "context": [{"key": "vi_command_mode_aware"}]},
         // // this unmaps unindent behavior of >>
         // {"keys": [">",">"], "command" : "UnMapIndent"
         //     , "context": [{"key": "vi_command_mode_aware"}]},
-    // delete spaces, first right, than left
-    { "keys": ["ctrl+h"], "command": "line_movement", "args": {"move": "spaces"}
-        , "context": [{"key": "vi_command_mode_aware"}]},
-    
 
- // ************* not vim specific - flows well with vim *************
+
+// ************* not vim specific - flows well with vim *************
     // press <esc> key using ctrl+c
     { "keys": ["ctrl+c"], "command": "single_selection", "context":
         [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},        
+
+    // delete spaces, first right, than left
+    { "keys": ["option+h"], "command": "line_movement", "args": {"move": "spaces"}},
+    // for reference
+    // [ctrl+w] delete previous word 
+    // [ctrl+h] delete previous letter
+    // [ctrl+u] delete line
 
     // join lines
     { "keys": ["option+j"], "command": "join_lines"},
@@ -126,8 +137,3 @@
     //     }
     // },
 ]
-
-
-
-
-

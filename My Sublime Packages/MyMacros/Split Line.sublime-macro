@@ -1,6 +1,4 @@
 [
-// testing     ground
-
     {"command": "first_non_space"},
     {"command": "move_to", "args": {"to": "hardeol", "extend": true}},
     {"command": "add_to_kill_ring", "args": {"forward": true}},
