@@ -36,7 +36,10 @@ class RunMultipleCommandsCommand(sublime_plugin.TextCommand):
             # uncomment the next line, if you want to add a delay to the execution
             # sublime.set_timeout( lambda: context.run_command(command['command']), 2000 )
         else:
-            context.run_command(command['command'], args)
+            if command['command'] == '_nv_feed_key':
+                self.view.window().run_command(command['command'], args)
+            else:
+                context.run_command(command['command'], args)
             # uncomment the next line, if you want to add a delay to the execution
             # sublime.set_timeout( lambda: context.run_command(command['command'], args), 2000 )
 
