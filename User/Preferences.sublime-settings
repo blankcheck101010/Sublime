@@ -72,6 +72,7 @@
 	"origami_auto_close_empty_panes": true,
 	"origami_auto_zoom_on_focus": 0.99,
 	"scroll_past_end": true,
+	"show_errors_inline": false,
 	"tab_size": 4,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
