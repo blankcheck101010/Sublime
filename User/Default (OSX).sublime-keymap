@@ -52,10 +52,12 @@
         , "context": [{"key": "vi_insert_mode_aware"}]},
 
     // *************************** Normal Mode **************************
-    // spacebar while in normal mode
-    { "keys": [" "], "command": "insert", "args": {"characters": " "}
+    // // spacebar while in normal mode
+    // { "keys": [" "], "command": "insert", "args": {"characters": " "}
+    //     , "context": [{"key": "vi_command_mode_aware"}]},
+
     // { "keys": [">"," "], "command": "insert", "args": {"characters": " "}
-        , "context": [{"key": "vi_command_mode_aware"}]},
+    //     , "context": [{"key": "vi_command_mode_aware"}]},
     // exit visual/multi-select mode with single selection at top
     {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : {
             "commands" : [
