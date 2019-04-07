@@ -1,8 +1,17 @@
 let mapleader=,
+" NOTE YOU MUST RESTART SUBLIME FOR CHANGES HERE TO TAKE EFFECT
 " Scroll viewport faster.
 " http://items.sjbach.com/319/configuring-vim-right
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+nnoremap <C-d> 20<C-e>
+nnoremap <C-u> 20<C-y>
+" Below, are fancy ways to paste your yanks
+nnoremap <C-p> pa<space><esc>
+nnoremap <leader>v A<space><esc>p
+nnoremap <leader><C-v> A<space><space><esc>p
+nnoremap Y vily
+" Below yanks contents of line
 "
 " Type :h vintageousrc for help.
 "

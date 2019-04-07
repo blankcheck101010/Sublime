@@ -2,7 +2,7 @@ import sublime_plugin
 import sublime
 
 
-class OneSelectionCommand(sublime_plugin.TextCommand):
+class OneSelectionBottomCommand(sublime_plugin.TextCommand):
 
     '''
     When Triggered, get count of current selection
@@ -19,7 +19,7 @@ class OneSelectionCommand(sublime_plugin.TextCommand):
                 # line_col_tup = self.view.rowcol(selection.begin())
                 # sublime.message_dialog(str(line_col_tup))
 
-                point = selection.begin()
+                point = selection.end() - 1
                 # sublime.message_dialog(str(point))
 
                 self.view.sel().clear()

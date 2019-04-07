@@ -4,6 +4,12 @@
         { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
         { "keys": ["super+alt+left"], "command": "single_selection" },
         { "keys": ["super+alt+right"], "command": "single_selection" },
+        { "keys": ["ctrl+option+k"], "command": "select_lines", "args": {"forward": false} },
+        { "keys": ["ctrl+option+j"], "command": "select_lines", "args": {"forward": true} },
+        { "keys": ["ctrl+super+k"], "command": "swap_line_up" },
+        { "keys": ["ctrl+super+j"], "command": "swap_line_down" },
+        { "keys": ["ctrl+option+h"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+        { "keys": ["ctrl+option+l"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
         // { "keys": ["super+shift+v"], "command": "paste" },
         // { "keys": ["super+v"], "command": "paste_and_indent" },
         { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
@@ -42,14 +48,16 @@
     { "keys": ["super+i"], "command": "toggle_neovintageous" },
     // *************************** Insert Mode **************************
     // enter normal mode using ctrl-[
-    { "keys": ["ctrl+["], "command": "_enter_normal_mode"
-        , "context": [{"key": "vi_insert_mode_aware"}]},
+    {"keys": [ "ctrl+["], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}
+        , "context": [{"key": "vi_insert_mode_aware"}, {"key": "setting.vintageous_use_ctrl_keys"}]},
     // right delete while in insert mode
     { "keys": ["ctrl+d"], "command": "right_delete"
         , "context": [{"key": "vi_insert_mode_aware"}]},
     // in insert mode, deletes everything from bol to cursor
     { "keys": ["ctrl+u"], "command": "del_to_cursor"
         , "context": [{"key": "vi_insert_mode_aware"}]},
+
+
 
     // *************************** Normal Mode **************************
     // // spacebar while in normal mode
@@ -58,14 +66,16 @@
 
     // { "keys": [">"," "], "command": "insert", "args": {"characters": " "}
     //     , "context": [{"key": "vi_command_mode_aware"}]},
+
     // exit visual/multi-select mode with single selection at top
-    {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : {
-            "commands" : [
-                { "command": "one_selection"},
-                { "command": "_enter_normal_mode"}
-            ]
-        }, "context": [{"key": "vi_command_mode_aware"}]
-    },
+    {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : { "commands" : [
+                { "command": "one_selection_top"},
+                { "command": "_enter_normal_mode"}]}, "context": [{"key": "vi_command_mode_aware"}]},
+
+    // exit visual/multi-select mode with single selection at bottom
+    {"keys" : ["ctrl+."],"command" : "run_multiple_commands","args" : { "commands" : [
+                { "command": "one_selection_bottom"},
+                { "command": "_enter_normal_mode"}]}, "context": [{"key": "vi_command_mode_aware"}]},
 
     // window-tab movement
     { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }, "context": [{"key": "vi_command_mode_aware"}]},
