@@ -67,15 +67,21 @@
     // { "keys": [">"," "], "command": "insert", "args": {"characters": " "}
     //     , "context": [{"key": "vi_command_mode_aware"}]},
 
+
+
+
+
+
     // exit visual/multi-select mode with single selection at top
     {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : { "commands" : [
                 { "command": "one_selection_top"},
-                { "command": "_enter_normal_mode"}]}, "context": [{"key": "vi_command_mode_aware"}]},
+                { "command": "_enter_normal_mode"}]}},
 
     // exit visual/multi-select mode with single selection at bottom
     {"keys" : ["ctrl+."],"command" : "run_multiple_commands","args" : { "commands" : [
                 { "command": "one_selection_bottom"},
-                { "command": "_enter_normal_mode"}]}, "context": [{"key": "vi_command_mode_aware"}]},
+                { "command": "_enter_normal_mode"}]}},
+
 
     // window-tab movement
     { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }, "context": [{"key": "vi_command_mode_aware"}]},

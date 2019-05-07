@@ -16,6 +16,10 @@ class OneSelectionTopCommand(sublime_plugin.TextCommand):
 
         for i, selection in enumerate(selections):
             if i == 0:
+
+                region_list = list(selections)
+                last_region = region_list[-1]
+
                 # line_col_tup = self.view.rowcol(selection.begin())
                 # sublime.message_dialog(str(line_col_tup))
 
