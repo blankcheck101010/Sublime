@@ -10,7 +10,6 @@ nnoremap <C-u> 20k
 nnoremap <C-p> Pa<space><esc>
 nnoremap <leader>v A<space><esc>p
 nnoremap <leader><C-v> A<space><space><esc>p
-nnoremap <leader>Y vily
 nnoremap yy vily
 " Below yanks contents of line
 "
@@ -30,7 +29,7 @@ nnoremap yy vily
 "
 " '' - to quickly return to previous location (Check on github issues. Works sometimes)
 "
-" to copy and replace text somewhere else using change hotkeys like ci)
+" to copy and replace text somewhere else using change hotkeys like ci
 " (Use the 'Using a text object' method in the website below)
 " http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text
 " https://unix.stackexchange.com/questions/88714/vim-how-can-i-do-a-change-word-using-the-current-paste-buffer
