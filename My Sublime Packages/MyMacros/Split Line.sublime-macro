@@ -6,6 +6,7 @@
     {"command": "insert", "args": {"characters": "\n"}},
     {"command": "paste_and_indent"},
     {"command": "move_to", "args": {"to": "bol", "extend": true}},
-    {"command": "one_selection"},
-    {"command": "reindent"},
+    {"command": "one_selection_bottom"},
+    {"command": "move", "args": {"by": "lines", "forward": false, "amount": 5.0 }},
+    // {"command": "reindent"},
 ]
