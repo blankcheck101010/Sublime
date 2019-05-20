@@ -1,0 +1,23 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "Documents/GitHub/FlaskApp/Flask_Blog"
+		},
+		{
+			"path": "Google Drive/Developer/Flask Main"
+		},
+		{
+			"path": "OneDrive - Southern Glazer's Wine & Spirits/SGWS-Saul/Python Project/etc/Sublime Projects/Python Main"
+		}
+	]
+}

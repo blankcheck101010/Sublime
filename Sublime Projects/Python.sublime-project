@@ -1,0 +1,35 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "OneDrive - Southern Glazer's Wine & Spirits/SGWS-Saul/Python Project/etc/Sublime Projects/Python Main"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Python Resources"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Subject notes"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Practice Problems/Glassdoor/Glassdoor Python"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Practice Problems/Leetcode/SaulLeetCode Python"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Practice Problems/Leetcode/PatrickLeetCode Python"
+		},
+		{
+			"path": "Google Drive/Developer/Prep/Practice Problems/HackerRank"
+		}
+	]
+}
