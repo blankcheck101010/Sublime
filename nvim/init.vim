@@ -67,7 +67,7 @@ nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
 nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
 " Type a space while in Normal Mode
-nnoremap <Space> i<Space><Right><ESC>
+" nnoremap <Space> i<Space><Right><ESC>
 
 " right delete in input mode
 inoremap <C-d> <Del>
