@@ -1,11 +1,13 @@
 let mapleader=,
 " NOTE YOU MUST RESTART SUBLIME FOR CHANGES HERE TO TAKE EFFECT
-" Scroll viewport faster.
 " http://items.sjbach.com/319/configuring-vim-right
+" Scroll viewport faster.
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 nnoremap <C-d> 20j
 nnoremap <C-u> 20k
+" add a space quickly while in Normal Mode
+nnoremap <leader><space> i<space><esc>
 " Below, are fancy ways to paste your yanks
 nnoremap <C-p> Pa<space><esc>
 nnoremap <leader>v A<space><esc>p
