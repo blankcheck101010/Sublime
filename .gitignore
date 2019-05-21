@@ -9,7 +9,7 @@
 
 
 # Ignoring these sublime text files
-# /User/Preferences.sublime-settings 
+/User/Preferences.sublime-settings 
 /User/Sublimerge*
 /User/Package Control*
 /User/oscrypto-ca-bundle.crt
