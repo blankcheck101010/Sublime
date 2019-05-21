@@ -45,6 +45,7 @@
 	"ignored_packages":
 	[
 		"ActualVim",
+		"C++",
 		"Six",
 		"Vintage",
 		"Vintageous"
