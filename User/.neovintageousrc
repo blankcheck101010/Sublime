@@ -12,7 +12,7 @@ nnoremap <leader><space> i<space><esc>
 nnoremap <C-p> Pa<space><esc>
 nnoremap <leader>v A<space><esc>p
 nnoremap <leader><C-v> A<space><space><esc>p
-nnoremap yy vily
+nnoremap <leader>y vily
 " Below yanks contents of line
 "
 " Type :h vintageousrc for help.
