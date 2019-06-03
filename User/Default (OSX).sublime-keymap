@@ -1,5 +1,5 @@
 [
-    // generic sublime bindings
+    // Sublime Bindings Generic 
         { "keys": ["super+t"], "command": "new_file" },
         { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
         { "keys": ["super+alt+left"], "command": "single_selection" },
@@ -15,6 +15,21 @@
         { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
         { "keys": ["alt+s"], "command": "dev_sync" },
         { "keys": ["super+k", "super+p"], "command": "paste_from_history" },    
+
+    // Submlime Formatting
+        // works with json, xml, html
+        { "keys": ["super+shift+f"], "command": "htmlprettify"},
+        { "keys": ["super+shift+s"], "command": "sql_beautifier"},
+
+        // fold all code blocks
+        { "keys": ["super+k", "super+f"], "command": "fold_all" },
+
+        // unfold all code blocks
+        { "keys": ["super+k", "super+shift+f"], "command": "unfold_all"},
+
+        // toggle fold current code block
+        { "keys": ["super+k", "super+c"], "command": "toggle_fold_current"},
+
 
     // focus groups
         // creating panes with active file
@@ -85,7 +100,8 @@
 
     // window-tab movement
     { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }, "context": [{"key": "vi_command_mode_aware"}]},
-    { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" }, "context": [{"key": "vi_command_mode_aware"}]},
+    { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" },"context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
+    { "keys": ["super+shift+l"], "command": "split_selection_into_lines", "context": [{ "key": "selection_empty", "operator": "not_equal", "operand": 1 }]},
     { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }, "context": [{"key": "vi_command_mode_aware"}]},
     { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }, "context": [{"key": "vi_command_mode_aware"}]},
 
@@ -138,20 +154,20 @@
 
 
     // force remap escape keys
-    { "keys": ["ctrl+c"], "command": "single_selection", "context":
-        [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
-    { "keys": ["ctrl+c"], "command": "clear_fields", "context":
-        [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
-    { "keys": ["ctrl+c"], "command": "clear_fields", "context":
-        [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
-    { "keys": ["ctrl+c"], "command": "hide_panel", "args": {"cancel": true}, "context": 
-        [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["ctrl+c"], "command": "hide_overlay", "context":
-        [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["ctrl+c"], "command": "hide_popup", "context":
-        [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["ctrl+c"], "command": "hide_auto_complete", "context":
-        [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "single_selection",
+        "context": [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields",
+        "context": [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields",
+        "context": [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_panel", "args": {"cancel": true},
+    "context":  [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_overlay",
+        "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_popup",
+        "context": [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_auto_complete",
+        "context": [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]},
 
     // // actualvim
     // { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
