@@ -6,8 +6,8 @@
         { "keys": ["super+alt+right"], "command": "single_selection" },
         { "keys": ["ctrl+option+k"], "command": "select_lines", "args": {"forward": false} },
         { "keys": ["ctrl+option+j"], "command": "select_lines", "args": {"forward": true} },
-        { "keys": ["ctrl+super+k"], "command": "swap_line_up" },
-        { "keys": ["ctrl+super+j"], "command": "swap_line_down" },
+        { "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
+        { "keys": ["ctrl+shift+j"], "command": "swap_line_down" },
         { "keys": ["ctrl+option+h"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
         { "keys": ["ctrl+option+l"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
         // { "keys": ["super+shift+v"], "command": "paste" },
@@ -17,9 +17,12 @@
         { "keys": ["super+k", "super+p"], "command": "paste_from_history" },    
 
     // Submlime Formatting
-        // works with json, xml, html
-        { "keys": ["super+shift+f"], "command": "htmlprettify"},
-        { "keys": ["super+shift+s"], "command": "sql_beautifier"},
+        // works with html, xml
+        { "keys": ["ctrl+super+h"], "command": "htmlprettify"},
+        // works with json
+        // { "keys": ["ctrl+super+j"], "command": "prettyjson"},
+        // works with sql
+        { "keys": ["ctrl+super+s"], "command": "sql_beautifier"},
 
         // fold all code blocks
         { "keys": ["super+k", "super+f"], "command": "fold_all" },
@@ -29,6 +32,9 @@
 
         // toggle fold current code block
         { "keys": ["super+k", "super+c"], "command": "toggle_fold_current"},
+
+
+
 
 
     // focus groups
