@@ -8,3 +8,4 @@ ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Python.sublime-project' ~/
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/SGWS.sublime-project' ~/
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/SQL.sublime-project' ~/
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Sublime.sublime-project' ~/
+ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Slalom.sublime-project' ~/
