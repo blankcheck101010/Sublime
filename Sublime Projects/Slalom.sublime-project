@@ -17,7 +17,13 @@
 			"path": "OneDrive - UCLA IT Services/SQL Main"
 		},
 		{
-			"path": "OneDrive - UCLA IT Services/Class Pass"
+			"path": "OneDrive - UCLA IT Services/classpass"
+		},
+		{
+			"path": "Documents/BitBucket/DataArchitecture/core"
+		},
+		{
+			"path": "Documents/BitBucket/DataArchitecture/tests"
 		}
 	]
 }
