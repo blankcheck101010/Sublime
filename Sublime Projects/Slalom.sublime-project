@@ -11,24 +11,32 @@
 	"folders":
 	[
 		{
-			"path": "OneDrive - UCLA IT Services/Python Main",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "OneDrive - UCLA IT Services/Python Main"
 		},
 		{
 			"path": "OneDrive - UCLA IT Services/SQL Main"
 		},
 		{
-			"path": "OneDrive - UCLA IT Services/classpass",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"folder_exclude_patterns":
+			[
+				"__pycache__"
+			],
+			"path": "Documents/BitBucket/DataArchitecture/core"
 		},
 		{
-			"path": "Documents/BitBucket/DataArchitecture/core",
-			"folder_exclude_patterns": ["__pycache__"],
-			"file_exclude_patterns": ["*__init__.py"]
-		},
-		{
-			"path": "Documents/BitBucket/DataArchitecture/tests",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "Documents/BitBucket/DataArchitecture/tests"
 		}
 	]
 }
