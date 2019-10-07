@@ -21,6 +21,9 @@
 			"path": "OneDrive - UCLA IT Services/SQL Main"
 		},
 		{
+			"path": "Documents/Stripe/Tableau Scripts"
+		},
+		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"

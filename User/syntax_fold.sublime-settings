@@ -29,6 +29,11 @@
             "scope": "text.plain",
             "startMarker":"---region---",
             "endMarker":"---endregion---"
+        },
+        {
+            "scope": "source.shell.bash",
+            "startMarker":"# region",
+            "endMarker":"# endregion"
         }
     ]
 }
