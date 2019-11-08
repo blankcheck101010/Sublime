@@ -21,7 +21,17 @@
 			"path": "OneDrive - UCLA IT Services/SQL Main"
 		},
 		{
-			"path": "Documents/Stripe/Tableau Scripts"
+			"file_exclude_patterns":
+			[
+				"sftp-config.json"
+			],
+			"path": "Documents/Stripe/pythonscripts"
+		},
+		{
+			"path": "Documents/Stripe/tableauscripts"
+		},
+		{
+			"path": "Documents/Stripe/singlenodeslalom"
 		},
 		{
 			"file_exclude_patterns":
