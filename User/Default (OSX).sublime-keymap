@@ -72,7 +72,7 @@
     // for reference
     // [ctrl+w] delete previous word 
     // [ctrl+h] delete previous letter
-    // [ctrl+u] delete line
+    // [ctrl+u] delete bol to cursor
 
 
 // ****************** vintageous specific commands ******************
