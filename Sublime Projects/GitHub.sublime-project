@@ -11,16 +11,19 @@
 	"folders":
 	[
 		{
-			"path": "Documents/GitHub/Sublime"
+			"path": "Documents/BitBucket/DataArchitecture"
 		},
 		{
-			"path": "Documents/BitBucket/DataArchitecture"
+			"path": "Documents/GitHub/Sublime"
 		},
 		{
 			"path": "Documents/GitHub/Sublime/My Sublime Packages/MyMacros"
 		},
 		{
 			"path": "Documents/GitHub/Sublime/My Sublime Packages/MyPlugins"
+		},
+		{
+			"path": "Documents/GitHub/Fresh-Install"
 		}
 	]
 }
