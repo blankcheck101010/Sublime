@@ -91,9 +91,9 @@
     // in insert mode, move eol
     { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"}
         , "context": [{"key": "vi_insert_mode_aware"}]},
-    // in insert mode, deletes everything from cursor to eol
-    { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}
-        , "context": [{"key": "vi_insert_mode_aware"}]},
+    // // in insert mode, deletes everything from cursor to eol
+    // { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}
+    //     , "context": [{"key": "vi_insert_mode_aware"}]},
 
 
     // *************************** Normal Mode **************************
@@ -116,14 +116,14 @@
                 { "command": "_enter_normal_mode"}]}},
 
     // move line down
-    { "keys": ["ctrl+j"], "command": "line_movement", "args": {"move": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
+    { "keys": ["ctrl+j"], "command": "line_movement", "args": {"move": "down"}},
     // move line up
-    { "keys": ["ctrl+k"], "command": "line_movement", "args": {"move": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
+    { "keys": ["ctrl+k"], "command": "line_movement", "args": {"move": "up"}},
 
     // create new line below
-    { "keys": ["ctrl+n"], "command": "line_movement", "args": {"move": "create"}, "context": [{"key": "vi_command_mode_aware"}]},
+    { "keys": ["ctrl+n"], "command": "line_movement", "args": {"move": "create"}},
     // delete new line below
-    { "keys": ["ctrl+m"], "command": "line_movement", "args": {"move": "delete"}, "context": [{"key": "vi_command_mode_aware"}]},
+    { "keys": ["ctrl+m"], "command": "line_movement", "args": {"move": "delete"}},
 
     // Join Lines
         // "super+j"
