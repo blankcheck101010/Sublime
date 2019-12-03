@@ -1,55 +1,58 @@
 {
-	"build_systems":
-	[
-		{
-			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "Anaconda Python Builder",
-			"selector": "source.python",
-			"shell_cmd": "\"python\" -u \"$file\""
-		}
-	],
-	"folders":
-	[
-		{
-			"file_exclude_patterns":
-			[
-				"*__init__.py"
-			],
-			"path": "OneDrive - UCLA IT Services/Python Main"
-		},
-		{
-			"path": "OneDrive - UCLA IT Services/SQL Main"
-		},
-		{
-			"file_exclude_patterns":
-			[
-				"sftp-config.json"
-			],
-			"path": "Documents/Stripe/pythonscripts"
-		},
-		{
-			"path": "Documents/Stripe/tableauscripts"
-		},
-		{
-			"path": "Documents/Stripe/singlenodeslalom"
-		},
-		{
-			"file_exclude_patterns":
-			[
-				"*__init__.py"
-			],
-			"folder_exclude_patterns":
-			[
-				"__pycache__"
-			],
-			"path": "Documents/BitBucket/DataArchitecture/core"
-		},
-		{
-			"file_exclude_patterns":
-			[
-				"*__init__.py"
-			],
-			"path": "Documents/BitBucket/DataArchitecture/tests"
-		}
-	]
+    "build_systems":
+    [
+        {
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "name": "Anaconda Python Builder",
+            "selector": "source.python",
+            "shell_cmd": "\"python\" -u \"$file\""
+        }
+    ],
+    "folders":
+    [
+        {
+            "file_exclude_patterns":
+            [
+                "*__init__.py"
+            ],
+            "path": "OneDrive - UCLA IT Services/Python Main"
+        },
+        {
+            "path": "OneDrive - UCLA IT Services/SQL Main"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "sftp-config.json"
+            ],
+            "path": "Documents/Stripe/pythonscripts"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*__init__.py"
+            ],
+            "folder_exclude_patterns":
+            [
+                "__pycache__"
+            ],
+            "path": "Documents/BitBucket/DataArchitecture/core"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*__init__.py"
+            ],
+            "path": "Documents/BitBucket/DataArchitecture/tests"
+        },
+        {
+            "path": "Documents/Stripe/tableauscripts"
+        },
+        {
+            "path": "Documents/Stripe/singlenodeslalom"
+        },
+        {
+            "path": "Desktop/s3transfer"
+        }
+    ]
 }
