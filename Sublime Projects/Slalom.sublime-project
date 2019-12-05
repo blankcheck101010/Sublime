@@ -11,39 +11,24 @@
     "folders":
     [
         {
-            "file_exclude_patterns":
-            [
-                "*__init__.py"
-            ],
-            "path": "OneDrive - UCLA IT Services/Python Main"
+            "path": "OneDrive - UCLA IT Services/Python Main",
+            "file_exclude_patterns": ["*__init__.py"]
         },
         {
             "path": "OneDrive - UCLA IT Services/SQL Main"
         },
         {
-            "file_exclude_patterns":
-            [
-                "sftp-config.json"
-            ],
-            "path": "Documents/Stripe/pythonscripts"
+            "path": "Documents/Stripe/pythonscripts",
+            "file_exclude_patterns": ["sftp-config.json"]
         },
         {
-            "file_exclude_patterns":
-            [
-                "*__init__.py"
-            ],
-            "folder_exclude_patterns":
-            [
-                "__pycache__"
-            ],
-            "path": "Documents/BitBucket/DataArchitecture/core"
+            "path": "Documents/BitBucket/DataArchitecture/core",
+            "file_exclude_patterns": ["*__init__.py"],
+            "folder_exclude_patterns": ["__pycache__"]
         },
         {
-            "file_exclude_patterns":
-            [
-                "*__init__.py"
-            ],
-            "path": "Documents/BitBucket/DataArchitecture/tests"
+            "path": "Documents/BitBucket/DataArchitecture/tests",
+            "file_exclude_patterns": ["*__init__.py"]
         },
         {
             "path": "Documents/Stripe/tableauscripts"
