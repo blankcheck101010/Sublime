@@ -22,12 +22,9 @@
             "file_exclude_patterns": ["sftp-config.json"]
         },
         {
-            "path": "Documents/BitBucket/DataArchitecture/core",
-            "file_exclude_patterns": ["*__init__.py"],
-            "folder_exclude_patterns": ["__pycache__"]
-        },
-        {
-            "path": "Documents/BitBucket/DataArchitecture/tests",
+            "path": "Documents/BitBucket/DataArchitecture",
+            "file_exclude_patterns": ["sftp-config.json"],
+            "folder_exclude_patterns": ["__pycache__"],
             "file_exclude_patterns": ["*__init__.py"]
         },
         {
