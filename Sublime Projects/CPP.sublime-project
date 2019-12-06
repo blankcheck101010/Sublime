@@ -1,17 +1,17 @@
 {
-	"build_systems":
-	[
-		{
-			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "Anaconda Python Builder",
-			"selector": "source.python",
-			"shell_cmd": "\"python\" -u \"$file\""
-		}
-	],
-	"folders":
-	[
-		{
-			"path": "Google Drive/Developer/CPP Main"
-		}
-	]
+    "build_systems":
+    [
+        {
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "name": "Anaconda Python Builder",
+            "selector": "source.python",
+            "shell_cmd": "\"python\" -u \"$file\""
+        }
+    ],
+    "folders":
+    [
+        {
+            "path": "~/Google Drive/Developer/CPP Main"
+        }
+    ]
 }

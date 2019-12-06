@@ -11,30 +11,30 @@
     "folders":
     [
         {
-            "path": "OneDrive - UCLA IT Services/Python Main",
+            "path": "~/OneDrive - UCLA IT Services/Python Main",
             "file_exclude_patterns": ["*__init__.py"]
         },
         {
-            "path": "OneDrive - UCLA IT Services/SQL Main"
+            "path": "~/OneDrive - UCLA IT Services/SQL Main"
         },
         {
-            "path": "Documents/Stripe/pythonscripts",
+            "path": "~/Documents/Stripe/pythonscripts",
             "file_exclude_patterns": ["sftp-config.json"]
         },
         {
-            "path": "Documents/BitBucket/DataArchitecture",
+            "path": "~/Documents/BitBucket/DataArchitecture",
             "file_exclude_patterns": ["sftp-config.json"],
             "folder_exclude_patterns": ["__pycache__"],
             "file_exclude_patterns": ["*__init__.py"]
         },
         {
-            "path": "Documents/Stripe/tableauscripts"
+            "path": "~/Documents/Stripe/tableauscripts"
         },
         {
-            "path": "Documents/Stripe/singlenodeslalom"
+            "path": "~/Documents/Stripe/singlenodeslalom"
         },
         {
-            "path": "Desktop/s3transfer"
+            "path": "~/Desktop/s3transfer"
         }
     ]
 }
