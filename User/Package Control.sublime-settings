@@ -9,6 +9,7 @@
 		"ActualVim",
 		"AdvancedNewFile",
 		"Anaconda",
+		"BinaryPlist",
 		"BracketHighlighter",
 		"C++ Snippets",
 		"C++11",
@@ -47,6 +48,7 @@
 		"SyntaxFold",
 		"ToggleNeoVintageous",
 		"VintageousPluginSurround",
-		"WordHighlight"
+		"WordHighlight",
+		"xml2json"
 	]
 }
