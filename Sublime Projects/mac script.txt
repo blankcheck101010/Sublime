@@ -1,8 +1,0 @@
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/GitHub.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Python.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/SGWS.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/SQL.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Sublime.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Slalom.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
