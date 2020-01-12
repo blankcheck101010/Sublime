@@ -1,6 +1,3 @@
-ln -s ~/'Documents/GitHub/Sublime/Sublime Projects' ~/
-
-
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/GitHub.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
