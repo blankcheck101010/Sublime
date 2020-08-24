@@ -7,15 +7,15 @@ ln -s ~/'Documents/GitHub/Sublime/My Sublime Packages/MyMacros' ~/'Library/Appli
 ln -s ~/'Documents/GitHub/Sublime/My Sublime Packages/MyPlugins' ~/'Library/Application Support/Sublime Text 3/Packages/'
 ln -s ~/'Documents/GitHub/Sublime/User' ~/'Library/Application Support/Sublime Text 3/Packages/'
 
-# First move the project files over
-mv ~/'Documents/GitHub/Sublime/Sublime Projects/Python.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-mv ~/'Documents/GitHub/Sublime/Sublime Projects/SQL.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-mv ~/'Documents/GitHub/Sublime/Sublime Projects/Sublime.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-mv ~/'Documents/GitHub/Sublime/Sublime Projects/GitHub.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-mv ~/'Documents/GitHub/Sublime/Sublime Projects/Slalom.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-# mv ~/'Documents/GitHub/Sublime/Sublime Projects/SGWS.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-# mv ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
-# mv ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# First copy the project files over
+cp ~/'Documents/GitHub/Sublime/Sublime Projects/Python.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+cp ~/'Documents/GitHub/Sublime/Sublime Projects/SQL.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+cp ~/'Documents/GitHub/Sublime/Sublime Projects/Sublime.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+cp ~/'Documents/GitHub/Sublime/Sublime Projects/GitHub.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+cp ~/'Documents/GitHub/Sublime/Sublime Projects/Slalom.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# cp ~/'Documents/GitHub/Sublime/Sublime Projects/SGWS.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# cp ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# cp ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 
 # Then open them with sublime text 3 so they're in your 'quick switch' projects
 # Then close sublime text 3 and delete the files
