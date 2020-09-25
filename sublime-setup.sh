@@ -21,6 +21,7 @@ cp ~/'Documents/GitHub/Sublime/Sublime Projects/GitHub.sublime-project' ~/'Libra
 # cp ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 # cp ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 # cp ~/'Documents/GitHub/Sublime/Sublime Projects/PersonalFinance.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# cp ~/'Documents/GitHub/Sublime/Sublime Projects/DataVisualization.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 
 # Then open them with sublime text 3 so they're in your 'quick switch' projects
 # Then close sublime text 3 and delete the files
@@ -33,6 +34,7 @@ rm ~/'Library/Application Support/Sublime Text 3/Sublime Projects/Sublime.sublim
 # rm ~/'Library/Application Support/Sublime Text 3/Sublime Projects/CPP.sublime-project'
 # rm ~/'Library/Application Support/Sublime Text 3/Sublime Projects/FlaskApp.sublime-project'
 # rm ~/'Library/Application Support/Sublime Text 3/Sublime Projects/PersonalFinance.sublime-project'
+# rm ~/'Library/Application Support/Sublime Text 3/Sublime Projects/DataVisualization.sublime-project'
 
 # Finally, setup the links
 ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Python.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
@@ -44,3 +46,4 @@ ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/Sublime.sublime-project' ~/'L
 # ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/CPP.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 # ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/FlaskApp.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
 # ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/PersonalFinance.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
+# ln -s ~/'Documents/GitHub/Sublime/Sublime Projects/DataVisualization.sublime-project' ~/'Library/Application Support/Sublime Text 3/Sublime Projects'
