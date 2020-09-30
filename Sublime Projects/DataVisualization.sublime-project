@@ -11,7 +11,10 @@
 	"folders":
 	[
 		{
-			"path": "/Users/sulalva/Documents/GitHub/DataVisualization"
+			"path": "/Users/sulalva/Documents/GitHub/DataVisualization",
+			"file_exclude_patterns": ["*__init__.py"],
+			"file_exclude_patterns": ["sftp-config.json"],
+			"folder_exclude_patterns": ["__pycache__"]
 		}
 	]
 }
