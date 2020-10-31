@@ -1,7 +1,7 @@
 ### Sublime Setup ###
 
 # Note - The sublime project 'Github' will be unique. So do not simlink that project
-    
+
 
 # Install package control on sublimetext3
 rm -rf ~/'Library/Application Support/Sublime Text 3/Packages/User'
