@@ -69,8 +69,9 @@
     // delete spaces, first right, than left
     { "keys": ["ctrl+h"], "command": "line_movement", "args" : {"move": "spaces"}
         , "context": [{"key": "vi_command_mode_aware"}]},
-    // for reference
-    // [ctrl+w] delete previous word 
+
+    // for reference while in 'insert' aka regular mode
+    // [ctrl+w] delete previous word
     // [ctrl+h] delete previous letter
     // [ctrl+u] delete bol to cursor
 
@@ -79,22 +80,16 @@
     // toggle neovintagous
     { "keys": ["super+i"], "command": "toggle_neovintageous" },
     // *************************** Insert Mode **************************
-    // enter normal mode using ctrl-[
-    {"keys": [ "ctrl+["], "command": "_enter_normal_mode", "args": {"mode": "mode_insert"}
-        , "context": [{"key": "vi_insert_mode_aware"}, {"key": "setting.vintageous_use_ctrl_keys"}]},
-    // right delete while in insert mode
-    { "keys": ["ctrl+d"], "command": "right_delete"
-        , "context": [{"key": "vi_insert_mode_aware"}]},
+    // // enter normal mode using ctrl-[
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": [ "ctrl+["], "command": "nv_enter_normal_mode", "args": {"mode": "mode_insert"}
+    //     , "context": [{"key": "vi_insert_mode_aware"}, {"key": "setting.vintageous_use_ctrl_keys"}]},
     // in insert mode, deletes everything from bol to cursor
     { "keys": ["ctrl+u"], "command": "del_to_cursor"
         , "context": [{"key": "vi_insert_mode_aware"}]},
     // in insert mode, move eol
     { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"}
         , "context": [{"key": "vi_insert_mode_aware"}]},
-    // // in insert mode, deletes everything from cursor to eol
-    // { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}
-    //     , "context": [{"key": "vi_insert_mode_aware"}]},
-
 
     // *************************** Normal Mode **************************
     // // spacebar while in normal mode
@@ -108,12 +103,12 @@
     // exit visual/multi-select mode with single selection at top
     {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : { "commands" : [
                 { "command": "one_selection_top"},
-                { "command": "_enter_normal_mode"}]}},
+                { "command": "nv_enter_normal_mode"}]}},
 
     // exit visual/multi-select mode with single selection at bottom
     {"keys" : ["ctrl+."],"command" : "run_multiple_commands","args" : { "commands" : [
                 { "command": "one_selection_bottom"},
-                { "command": "_enter_normal_mode"}]}},
+                { "command": "nv_enter_normal_mode"}]}},
 
     // move line down
     { "keys": ["ctrl+j"], "command": "line_movement", "args": {"move": "down"}},
@@ -137,16 +132,17 @@
     { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
     { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
 
-    // comments
-    {"keys": ["o"] ,"command": "run_multiple_commands", "args" : {"commands" : [
-        { "command": "_nv_feed_key", "args": {"key": "o"}},
-        { "command": "line_movement", "args": {"move": "comment", "direction": "above"}},
-    ]}, "context": [{"key": "vi_command_mode_aware"}]},
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": ["o"] ,"command": "run_multiple_commands", "args" : {"commands" : [
+    //     { "command": "nv_feed_key", "args": {"key": "o"}},
+    //     { "command": "line_movement", "args": {"move": "comment", "direction": "above"}},
+    // ]}, "context": [{"key": "vi_command_mode_aware"}]},
 
-    {"keys": ["O"] ,"command": "run_multiple_commands", "args" : {"commands" : [
-        { "command": "_nv_feed_key", "args": {"key": "O"}},
-        { "command": "line_movement", "args": {"move": "comment", "direction": "below"}},
-    ]}, "context": [{"key": "vi_command_mode_aware"}]},
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": ["O"] ,"command": "run_multiple_commands", "args" : {"commands" : [
+    //     { "command": "nv_feed_key", "args": {"key": "O"}},
+    //     { "command": "line_movement", "args": {"move": "comment", "direction": "below"}},
+    // ]}, "context": [{"key": "vi_command_mode_aware"}]},
 
         // // this unmaps unindent behavior of <<
         // {"keys": ["<","<"], "command" : "UnMapUnindent"
