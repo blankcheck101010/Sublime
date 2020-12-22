@@ -11,11 +11,11 @@
     "folders":
     [
         {
-            "path": "~/OneDrive - UCLA IT Services/Python Main",
+            "path": "~/OneDrive - UCLA IT Services/Developer/Python Main",
             "file_exclude_patterns": ["*__init__.py"]
         },
         {
-            "path": "~/OneDrive - UCLA IT Services/SQL Main"
+            "path": "~/OneDrive - UCLA IT Services/Developer/SQL Main"
         },
         {
             "path": "~/Documents/Stripe/pythonscripts",
