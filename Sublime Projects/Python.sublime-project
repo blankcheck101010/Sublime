@@ -11,32 +11,56 @@
 	"folders":
 	[
 		{
-			"path": "~/OneDrive - UCLA IT Services/Python Main",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/OneDrive - UCLA IT Services/Developer/Python Main"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Python Resources",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Python Resources"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Subject notes",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Subject notes"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Glassdoor/Glassdoor Python",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Practice Problems/HackerRank"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/HackerRank",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Practice Problems/Leetcode/PatrickLeetCode Python"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Leetcode/SaulLeetCode Python",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Practice Problems/Glassdoor/Glassdoor Python"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Leetcode/PatrickLeetCode Python",
-			"file_exclude_patterns": ["*__init__.py"]
+			"file_exclude_patterns":
+			[
+				"*__init__.py"
+			],
+			"path": "/Users/saul/Google Drive/Developer/Prep/Practice Problems/Leetcode/SaulLeetCode Python"
+		},
+		{
+			"path": "/Users/saul/Google Drive/Developer/Prep/Practice Problems/IntCake"
 		}
 	]
 }
