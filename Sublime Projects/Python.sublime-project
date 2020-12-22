@@ -22,45 +22,45 @@
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Python Resources"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Python Resources"
 		},
 		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Subject notes"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Subject notes"
 		},
 		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/HackerRank"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Practice Problems/HackerRank"
 		},
 		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Leetcode/PatrickLeetCode Python"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Practice Problems/Leetcode/PatrickLeetCode Python"
 		},
 		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Glassdoor/Glassdoor Python"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Practice Problems/Glassdoor/Glassdoor Python"
 		},
 		{
 			"file_exclude_patterns":
 			[
 				"*__init__.py"
 			],
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/Leetcode/SaulLeetCode Python"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Practice Problems/Leetcode/SaulLeetCode Python"
 		},
 		{
-			"path": "~/Google Drive/Developer/Prep/Practice Problems/IntCake"
+			"path": "~/OneDrive - UCLA IT Services/Developer/Prep/Practice Problems/IntCake"
 		}
 	]
 }
