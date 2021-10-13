@@ -38,7 +38,6 @@
 		"SqlBeautifier",
 		"SQLTools",
 		"Sublime Input",
-		"sublime-text-2-buildview",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
 		"SublimeLinter-html-tidy",
@@ -50,6 +49,7 @@
 		"ToggleNeoVintageous",
 		"VintageousPluginSurround",
 		"WordHighlight",
-		"xml2json"
+		"xml2json",
+		"Buildview"
 	]
 }
