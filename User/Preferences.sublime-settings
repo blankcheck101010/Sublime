@@ -5,7 +5,7 @@
 	[
 		{
 			"characters": ".",
-			"selector": "source.python"
+			"selector": "source.python",
 		}
 	],
 	"buildview.enabled": false,
@@ -51,7 +51,7 @@
 		"Floobits",
 		"Six",
 		"Vintage",
-		"Vintageous"
+		"Vintageous",
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -65,11 +65,11 @@
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
-	"neovintageous_build_version": 11100,
+	"neovintageous_build_version": 12700,
 	"on_activated_user":
 	[
 		{
-			"command": "read_only"
+			"command": "read_only",
 		}
 	],
 	"open_files_in_new_window": false,
@@ -83,5 +83,5 @@
 	"vintageous_reset_mode_when_switching_tabs": false,
 	"vintageous_use_ctrl_keys": true,
 	"vintageous_use_super_keys": null,
-	"word_wrap": false
+	"word_wrap": false,
 }

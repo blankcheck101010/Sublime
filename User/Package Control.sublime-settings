@@ -43,7 +43,6 @@
 		"SublimeLinter-html-tidy",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
-		"Sublimerge 3",
 		"SyntaxFold",
 		"Terraform",
 		"ToggleNeoVintageous",
@@ -51,5 +50,5 @@
 		"WordHighlight",
 		"xml2json",
 		"Buildview"
-	]
+	],
 }
