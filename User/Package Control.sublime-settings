@@ -11,6 +11,7 @@
 		"Anaconda",
 		"BinaryPlist",
 		"BracketHighlighter",
+		"Buildview",
 		"C++ Snippets",
 		"C++11",
 		"ColorSchemeEditor",
@@ -45,10 +46,9 @@
 		"SublimeLinter-json",
 		"SyntaxFold",
 		"Terraform",
-		"ToggleNeoVintageous",
 		"VintageousPluginSurround",
 		"WordHighlight",
 		"xml2json",
-		"Buildview"
+		"NeoVintageousToggle"
 	],
 }
