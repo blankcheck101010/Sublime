@@ -1,0 +1,20 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "~/Documents/BitBucket/DataArchitecture",
+			"file_exclude_patterns": ["*__init__.py"],
+			"file_exclude_patterns": ["sftp-config.json"],
+			"folder_exclude_patterns": ["__pycache__"]
+		}
+	]
+}

@@ -1,26 +1,39 @@
 {
-	"config":
-	[
-		{
-			"endMarker": "'#End",
-			"name": "Example",
-			"startMarker": "'#Start"
-		},
-		{
-			"endMarker": "#endregion",
-			"name": "C#",
-			"startMarker": "#region"
-		},
-		{
-			"endMarker": "#pragma endregion",
-			"name": "C+",
-			"startMarker": "#pragma region"
-		}
-	],
-	"default":
-	{
-		"endMarker": "#endregion",
-		"name": "Default",
-		"startMarker": "#region"
-	}
+    "config":[
+        {
+            "scope": "source.java, source.js, embedding.php",
+            "startMarker": "//region",
+            "endMarker":"//endregion"
+        },
+        {
+            "scope": "source.python",
+            "startMarker":"# region",
+            "endMarker":"# endregion"
+        },
+        {
+            "scope": "source.cs",
+            "startMarker":"#region",
+            "endMarker":"#endregion"
+        },
+        {
+            "scope": "source.c++, source.c",
+            "startMarker":"#pragma region",
+            "endMarker":"#pragma endregion"
+        },
+        {
+            "scope": "text.html.basic",
+            "startMarker":"<!--region-->",
+            "endMarker":"<!--endregion-->"
+        },
+        {
+            "scope": "text.plain",
+            "startMarker":"---region---",
+            "endMarker":"---endregion---"
+        },
+        {
+            "scope": "source.shell.bash",
+            "startMarker":"# region",
+            "endMarker":"# endregion"
+        }
+    ]
 }

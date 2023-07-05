@@ -1,34 +1,183 @@
 [
-    { "keys": ["super+t"], "command": "new_file" },
-    { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-    { "keys": ["super+alt+left"], "command": "single_selection" },
-    { "keys": ["super+alt+right"], "command": "single_selection" },
-    { "keys": ["super+shift+v"], "command": "paste" },
-    { "keys": ["super+v"], "command": "paste_and_indent" },
-    { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
-    { "keys": ["alt+s"], "command": "dev_sync" },
-    { "keys": ["ctrl+d"], "command": "right_delete" },
-    { "keys": ["ctrl+e", "ctrl+e"], "command": "st_execute" },
-    { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
-    { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
+    // Sublime Bindings Generic 
+        { "keys": ["super+t"], "command": "new_file" },
+        { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+        { "keys": ["super+alt+left"], "command": "single_selection" },
+        { "keys": ["super+alt+right"], "command": "single_selection" },
+        { "keys": ["ctrl+option+k"], "command": "select_lines", "args": {"forward": false} },
+        { "keys": ["ctrl+option+j"], "command": "select_lines", "args": {"forward": true} },
+        { "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
+        { "keys": ["ctrl+shift+j"], "command": "swap_line_down" },
+        { "keys": ["ctrl+option+h"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+        { "keys": ["ctrl+option+l"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+        // { "keys": ["super+shift+v"], "command": "paste" },
+        // { "keys": ["super+v"], "command": "paste_and_indent" },
+        { "keys": ["super+b"], "command": "build", "context": [{"key": "build_fake", "operator": "equal", "operand": true}]},
+        { "keys": ["alt+s"], "command": "dev_sync" },
+        { "keys": ["super+k", "super+p"], "command": "paste_from_history" },    
+
+    // Submlime Formatting
+        // works with html, xml
+        { "keys": ["ctrl+super+h"], "command": "htmlprettify"},
+        // works with json
+        // { "keys": ["ctrl+super+j"], "command": "prettyjson"},
+        // works with sql
+        { "keys": ["ctrl+super+s"], "command": "sql_beautifier"},
+
+        // fold all code blocks
+        { "keys": ["super+k", "super+f"], "command": "fold_all" },
+
+        // unfold all code blocks
+        { "keys": ["super+k", "super+shift+f"], "command": "unfold_all"},
+
+        // toggle fold current code block
+        { "keys": ["super+k", "super+c"], "command": "toggle_fold_current"},
 
 
-    { "keys": ["escape"], "command": "single_selection", "context":
+    // focus groups
+        // creating panes with active file
+        { "keys": ["super+k", "super+shift+h"], "command": "create_pane_with_file", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+l"], "command": "create_pane_with_file", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+k"], "command": "create_pane_with_file", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+shift+j"], "command": "create_pane_with_file", "args": {"direction": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
+
+        // traveling to panes
+        { "keys": ["super+k", "h"], "command": "travel_to_pane", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "l"], "command": "travel_to_pane", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "k"], "command": "travel_to_pane", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "j"], "command": "travel_to_pane", "args": {"direction": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
+
+        // moving active file to an already created pane
+        { "keys": ["super+k", "super+h"], "command": "carry_file_to_pane", "args": {"direction": "left"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+l"], "command": "carry_file_to_pane", "args": {"direction": "right"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+k"], "command": "carry_file_to_pane", "args": {"direction": "up"}, "context": [{"key": "vi_command_mode_aware"}]},
+        { "keys": ["super+k", "super+j"], "command": "carry_file_to_pane", "args": {"direction": "down"}, "context": [{"key": "vi_command_mode_aware"}]},
+
+        // destroying panes
+        { "keys": ["super+k", "super+w"], "command": "destroy_pane", "args": {"direction": "self"} },
+
+        // zoom
+        { "keys": ["super+k", "super+z"], "command": "zoom_pane", "args": {"fraction": 1.0} },
+        { "keys": ["super+k", "super+shift+z"], "command": "unzoom_pane", "args": {} },
+
+
+// ************* not vim specific - flows well with vim *************
+    // press <esc> key using ctrl+c
+    { "keys": ["ctrl+c"], "command": "single_selection", "context":
         [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
-    { "keys": ["escape"], "command": "clear_fields", "context":
-        [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "clear_fields", "context":
-        [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_panel", "args": {"cancel": true}, "context": 
-        [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_overlay", "context":
-        [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_popup", "context":
-        [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
-    { "keys": ["escape"], "command": "hide_auto_complete", "context":
-        [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]
-    },
+
+    // delete spaces, first right, than left
+    { "keys": ["ctrl+h"], "command": "line_movement", "args" : {"move": "spaces"}
+        , "context": [{"key": "vi_command_mode_aware"}]},
+
+    // for reference while in 'insert' aka regular mode
+    // [ctrl+w] delete previous word
+    // [ctrl+h] delete previous letter
+    // [ctrl+u] delete bol to cursor
+
+
+// ****************** vintageous specific commands ******************
+    // toggle neovintagous
+    { "keys": ["super+i"], "command": "toggle_neovintageous" },
+    // *************************** Insert Mode **************************
+    // // enter normal mode using ctrl-[
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": [ "ctrl+["], "command": "nv_enter_normal_mode", "args": {"mode": "mode_insert"}
+    //     , "context": [{"key": "vi_insert_mode_aware"}, {"key": "setting.vintageous_use_ctrl_keys"}]},
+    // in insert mode, deletes everything from bol to cursor
+    { "keys": ["ctrl+u"], "command": "del_to_cursor"
+        , "context": [{"key": "vi_insert_mode_aware"}]},
+    // in insert mode, move eol
+    { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"}
+        , "context": [{"key": "vi_insert_mode_aware"}]},
+
+    // *************************** Normal Mode **************************
+    // // spacebar while in normal mode
+    // { "keys": [" "], "command": "insert", "args": {"characters": " "}
+    //     , "context": [{"key": "vi_command_mode_aware"}]},
+
+    // { "keys": [">"," "], "command": "insert", "args": {"characters": " "}
+    //     , "context": [{"key": "vi_command_mode_aware"}]},
+
+
+    // exit visual/multi-select mode with single selection at top
+    {"keys" : ["ctrl+,"],"command" : "run_multiple_commands","args" : { "commands" : [
+                { "command": "one_selection_top"},
+                { "command": "nv_enter_normal_mode"}]}},
+
+    // exit visual/multi-select mode with single selection at bottom
+    {"keys" : ["ctrl+."],"command" : "run_multiple_commands","args" : { "commands" : [
+                { "command": "one_selection_bottom"},
+                { "command": "nv_enter_normal_mode"}]}},
+
+    // move line down
+    { "keys": ["ctrl+j"], "command": "line_movement", "args": {"move": "down"}},
+    // move line up
+    { "keys": ["ctrl+k"], "command": "line_movement", "args": {"move": "up"}},
+
+    // create new line below
+    { "keys": ["ctrl+n"], "command": "line_movement", "args": {"move": "create"}},
+    // delete new line below
+    { "keys": ["ctrl+m"], "command": "line_movement", "args": {"move": "delete"}},
+
+    // Join Lines
+        // "super+j"
+
+    // Split lines at the cursor
+        // "r+enter" (while in normal mode)
+
+    // window-tab movement (multi-line select is cmd+shift+l, hence why the commands below need to be 'vi_command_mode_aware' AND multiselect = 1)
+    { "keys": ["super+shift+h"], "command": "move_tab", "args": { "position": "-1" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
+    { "keys": ["super+shift+l"], "command": "move_tab", "args": { "position": "+1" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
+    { "keys": ["super+shift+k"], "command": "move_tab", "args": { "position": "999" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
+    { "keys": ["super+shift+j"], "command": "move_tab", "args": { "position": "0" }, "context": [{ "key": "selection_empty", "operator": "equal", "operand": 1 }]},
+
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": ["o"] ,"command": "run_multiple_commands", "args" : {"commands" : [
+    //     { "command": "nv_feed_key", "args": {"key": "o"}},
+    //     { "command": "line_movement", "args": {"move": "comment", "direction": "above"}},
+    // ]}, "context": [{"key": "vi_command_mode_aware"}]},
+
+    // INCLUDED IN NEW NEOVINTAGEOUS VERSION
+    // {"keys": ["O"] ,"command": "run_multiple_commands", "args" : {"commands" : [
+    //     { "command": "nv_feed_key", "args": {"key": "O"}},
+    //     { "command": "line_movement", "args": {"move": "comment", "direction": "below"}},
+    // ]}, "context": [{"key": "vi_command_mode_aware"}]},
+
+        // // this unmaps unindent behavior of <<
+        // {"keys": ["<","<"], "command" : "UnMapUnindent"
+        //     , "context": [{"key": "vi_command_mode_aware"}]},
+        // // this unmaps unindent behavior of >>
+        // {"keys": [">",">"], "command" : "UnMapIndent"
+        //     , "context": [{"key": "vi_command_mode_aware"}]},
+
+
+    // force remap escape keys
+    { "keys": ["ctrl+c"], "command": "single_selection",
+        "context": [{ "key": "num_selections", "operator": "not_equal", "operand": 1 }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields",
+        "context": [{ "key": "has_next_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "clear_fields",
+        "context": [{ "key": "has_prev_field", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_panel", "args": {"cancel": true},
+    "context":  [{ "key": "panel_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_overlay",
+        "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_popup",
+        "context": [{ "key": "popup_visible", "operator": "equal", "operand": true }]},
+    { "keys": ["ctrl+c"], "command": "hide_auto_complete",
+        "context": [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }]},
+
+    // // actualvim
+    // { "keys": ["super+i"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": false}},
+    // // { "keys": ["super+e"], "command": "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}},
+    // {
+    //     "keys" : ["super+e"],"command" : "run_multiple_commands","args" : {
+    //         "commands" : [
+    //             { "command" : "one_selection", "context" : "text"},
+    //             { "command" : "custom_set_setting", "args": {"file": "ActualVim.sublime-settings", "key": "enabled", "value": true}, "context" : "app"},
+    //             { "command" : "one_selection", "context" : "text"},
+    //         ]
+    //     }
+    // },
 ]
-
-
-

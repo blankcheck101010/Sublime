@@ -1,0 +1,79 @@
+let mapleader=,
+" NOTE YOU MUST RESTART SUBLIME FOR CHANGES HERE TO TAKE EFFECT
+" http://items.sjbach.com/319/configuring-vim-right
+" Scroll viewport faster.
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+nnoremap <C-d> 20j
+nnoremap <C-u> 20k
+" add a space quickly while in Normal Mode
+nnoremap <leader><space> i<space><esc>
+" Below, are fancy ways to paste your yanks
+nnoremap <C-p> Pa<space><esc>
+nnoremap <leader>v A<space><esc>p
+nnoremap <leader><C-v> A<space><space><esc>p
+nnoremap <leader>y vily
+" Below yanks contents of line
+"
+" Type :h vintageousrc for help.
+"
+" Todo list
+"
+"
+"
+"
+"
+"
+"
+"
+"
+" Map ctrl+shift+j and k to grab lines and move them up and down
+"
+" '' - to quickly return to previous location (Check on github issues. Works sometimes)
+"
+" to copy and replace text somewhere else using change hotkeys like ci
+" (Use the 'Using a text object' method in the website below)
+" http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text
+" https://unix.stackexchange.com/questions/88714/vim-how-can-i-do-a-change-word-using-the-current-paste-buffer
+"
+" add (proper case capitalization) highlighting (super+k, super+f)
+"
+" Create a cheatsheets folder and open the files that's synced with GitHub
+"
+"
+"
+"
+"
+"
+"
+"
+" DONE in sublime text 3!!!!
+"
+" <j-j> to type <Esc> key
+"
+" Ctrl-D - right delete in Insert Mode
+"
+" Type <Space>(s) while in normal mode
+"
+" unmap the '< key, so you can use '< again
+"
+" ctrl-u - delete back to start of line while in insert mode
+"
+" Split line at current cursor with option+k
+":nnoremap K i<CR><Esc>
+"
+" join lines with option+j
+"
+" Ctrl-n/j inserts blank line below/above
+"nnoremap <silent><C-n> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-j> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+"
+" Ctrl-m/k deletes blank line below/above (if exists)
+"nnoremap <silent><C-m> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+"
+" Delete spaces before cursor with ctrl-h (and from end of line)
+"nnoremap <silent><C-h> :s/\s\+$//<CR> :<Esc>$
+"
+"
+"

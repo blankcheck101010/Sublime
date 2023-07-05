@@ -3,7 +3,7 @@
 	{
 		"completefunc": "ActualVimComplete"
 	},
-	"enabled": false,
+	"enabled": true,
 	"large_file_disable":
 	{
 		"bytes": 52428800,

@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# run filter named gitignore on all files ending in  
+User/Preferences.sublime-settings filter=gitignore
